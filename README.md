@@ -19,15 +19,6 @@ All portfolio data lives in a single file:
 src/data/portfolio.ts
 ```
 
-Edit `personal`, `skills`, `projects`, `certifications`, `arts`, and `socials` with your real information. For art pieces, add an `imageUrl` to show your own images instead of the gradient placeholders.
-
-## Development
-
-```bash
-npm install
-npm run dev
-```
-
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## Build for production
