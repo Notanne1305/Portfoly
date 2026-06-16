@@ -23,10 +23,6 @@ export function ArtCategoryStack({ group, colorOffset }: ArtCategoryStackProps) 
   const count = pieces.length
   const current = pieces[activeIndex]
 
-  useEffect(() => {
-    setLightboxOpen(false)
-  }, [activeIndex])
-
   const advance = useCallback(() => {
     if (count <= 1 || exiting) return
     setExiting(true)
@@ -103,13 +99,38 @@ export function ArtCategoryStack({ group, colorOffset }: ArtCategoryStackProps) 
         )}
       </div>
 
+      {/* Thumbnails for remaining pieces beyond the top 3 */}
+      {pieces.length > 3 && (
+        <div className={styles.moreRow} aria-hidden="false">
+          {pieces.slice(3).map((p, idx) => (
+            <button
+              key={p.title}
+              type="button"
+              className={styles.thumb}
+              onClick={() => setActiveIndex(3 + idx)}
+              aria-label={`Show ${p.title}`}
+            >
+              <span
+                className={styles.thumbImg}
+                style={{
+                  background: p.imageUrl ? `url(${p.imageUrl}) center/cover` : undefined,
+                }}
+              />
+            </button>
+          ))}
+        </div>
+      )}
+
       {current.imageUrl && (
         <MediaLightbox
           open={lightboxOpen}
           onClose={() => setLightboxOpen(false)}
+          onNext={() => setActiveIndex((i) => (i + 1) % count)}
+          onPrev={() => setActiveIndex((i) => (i - 1 + count) % count)}
           title={current.title}
           subtitle={`${group.category} · ${current.year}`}
           src={current.imageUrl}
+          description={current.description}
         />
       )}
 

@@ -38,6 +38,10 @@ export function Hero({ personal }: HeroProps) {
           </a>
         </div>
       </div>
+      
+      <div className={styles.portrait} aria-hidden="true">
+        <img src="/portrait.png" alt="" />
+      </div>
 
       <div className={styles.decor} aria-hidden="true">
         <span className={styles.decorLine} />

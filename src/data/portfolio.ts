@@ -138,48 +138,48 @@ export const portfolio: PortfolioData = {
 
   artGroups: [
     {
-      category: 'Shirt Design',
+      category: 'Shirt Designs',
       pieces: [
         {
           title: 'CCE 2024-25 Official Shirt',
           year: '2024',
           imageUrl: '/arts/WinningDesign24-25.jpg',
-          description: 'Bold typographic layout for a university org shirt — designed for screen print.',
+          description: 'Winning Design for Intramurals Shirt Design Contest 2024-2025 CCE under College of Computing Education',
         },
         {
           title: 'HCM OLA Class Commission',
           year: '2025',
           imageUrl: '/arts/OLA_Shirt.jpg',
-          description: 'Monochrome vector illustrations adapted for apparel across multiple colorways.',
+          description: 'Commission work for section OLA of Holy Cross of Mintal, AY. 2025-2026',
         },
         {
           title: 'Shirt Design Entry',
           year: '2025',
           imageUrl: '/arts/Entry2025-26.png',
-          description: 'Monochrome vector illustrations adapted for apparel across multiple colorways.',
+          description: 'Shirt design entry for the AY. 2025-2026 Intramurals Shirt Design Contest',
         },
         {
           title: 'UM CHE MICE Uniform Commission',
           year: '2026',
           imageUrl: '/arts/CHE_MICE_UNIFORM_WHITE_VER.jpg',
-          description: 'Monochrome vector illustrations adapted for apparel across multiple colorways.',
+          description: 'Commission Work for the College of Hospitality Education - MICE',
         }
       ],
     },
     {
-      category: 'Brochure',
+      category: 'Brochures',
       pieces: [
         {
           title: 'Lake Sebu Brochure (Front)',
           year: '2025',
           imageUrl:'/arts/front.png',
-          description: 'Tri-fold layout highlighting features, specs, and brand story for a tech product.',
+          description: 'Tri-fold layout highlighting features Lake Sebu.',
         },
         {
           title: 'Lake Sebu Brochure (Back)',
           year: '2025',
           imageUrl:'/arts/back.png',
-          description: 'Editorial brochure with photography-led spreads and structured itinerary sections.',
+          description: 'Tri-fold layout highlighting features Lake Sebu.',
         },
       ],
     },
@@ -190,7 +190,7 @@ export const portfolio: PortfolioData = {
           title: 'JBECP Event Publication Material',
           year: '2025',
           imageUrl:'/arts/JBECP.png',
-          description: 'Multi-page publication with data visuals, photo essays, and consistent grid system.',
+          description: 'Publication material for Junior Blockchain Education Consortium of the Philippines',
         },
       ],
     },
@@ -201,7 +201,7 @@ export const portfolio: PortfolioData = {
           title: 'Porsche 911',
           year: '2025',
           imageUrl:'/arts/landing_page_pic.png',
-          description: 'Digital illustration exploring light and distance — warm gradients into cool shadow.',
+          description: 'Digital arts to serve as the background for project Second Gear',
         },
       ],
     },
@@ -212,19 +212,19 @@ export const portfolio: PortfolioData = {
           title: 'Pipoy Piso Wifi',
           year: '2025',
           imageUrl:'/arts/Pipoy_Peso_Wifi.jpg',
-          description: 'Digital illustration exploring light and distance — warm gradients into cool shadow.',
+          description: 'Tarpaulin design for Pipoy Pisowifi Business',
         },
         {
           title: 'Graduation1',
           year: '2025',
           imageUrl:'/arts/Sir_Marvin.png',
-          description: 'Generative color fields created with custom shaders and layered composition.',
+          description: "Tarpaulin design for Mr. Batican's graduation",
         },
         {
           title: 'Graduation2',
           year: '2025',
           imageUrl:'/arts/Maam_Abby.png',
-          description: 'Generative color fields created with custom shaders and layered composition.',
+          description: "Tarpaulin design og Ms. Macanta's graduation ",
         },
       ],
     },

@@ -9,12 +9,15 @@ function isPdfSource(url: string): boolean {
 interface MediaLightboxProps {
   open: boolean
   onClose: () => void
+  onNext?: () => void
+  onPrev?: () => void
   title: string
   subtitle?: string
   src: string
+  description?: string
 }
 
-export function MediaLightbox({ open, onClose, title, subtitle, src }: MediaLightboxProps) {
+export function MediaLightbox({ open, onClose, onNext, onPrev, title, subtitle, src, description }: MediaLightboxProps) {
   const isPdf = isPdfSource(src)
 
   useEffect(() => {
@@ -25,6 +28,8 @@ export function MediaLightbox({ open, onClose, title, subtitle, src }: MediaLigh
 
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose()
+      if (e.key === 'ArrowRight' && onNext) onNext()
+      if (e.key === 'ArrowLeft' && onPrev) onPrev()
     }
 
     window.addEventListener('keydown', onKeyDown)
@@ -32,7 +37,7 @@ export function MediaLightbox({ open, onClose, title, subtitle, src }: MediaLigh
       document.body.style.overflow = previousOverflow
       window.removeEventListener('keydown', onKeyDown)
     }
-  }, [open, onClose])
+  }, [open, onClose, onNext, onPrev])
 
   if (!open) return null
 
@@ -56,16 +61,44 @@ export function MediaLightbox({ open, onClose, title, subtitle, src }: MediaLigh
         </header>
 
         <div className={styles.mediaWrap}>
-          {isPdf ? (
-            <iframe
-              src={`${src}#toolbar=1&navpanes=0&view=FitH`}
-              title={title}
-              className={styles.pdf}
-            />
-          ) : (
-            <img src={src} alt={title} className={styles.image} />
+          {onPrev && (
+            <button
+              type="button"
+              className={styles.navBtn}
+              onClick={onPrev}
+              aria-label="Previous"
+            >
+              ‹
+            </button>
+          )}
+          <div className={styles.mediaInner}>
+            {isPdf ? (
+              <iframe
+                src={`${src}#toolbar=1&navpanes=0&view=FitH`}
+                title={title}
+                className={styles.pdf}
+              />
+            ) : (
+              <img src={src} alt={title} className={styles.image} />
+            )}
+          </div>
+          {onNext && (
+            <button
+              type="button"
+              className={styles.navBtn}
+              onClick={onNext}
+              aria-label="Next"
+            >
+              ›
+            </button>
           )}
         </div>
+
+        {description && (
+          <div className={styles.footer}>
+            <p className={styles.description}>{description}</p>
+          </div>
+        )}
       </div>
     </div>,
     document.body,

@@ -153,6 +153,26 @@
   color: var(--copper);
 }
 
+.portrait {
+  margin-left: auto;
+  width: 480px;
+  height: 480px;
+  flex: 0 0 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeUp 0.8s ease 0.5s both;
+  position: relative;
+}
+
+.portrait img {
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  box-shadow: none;
+  border: none;
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -171,6 +191,10 @@
   }
 
   .decor {
+    display: none;
+  }
+
+  .portrait {
     display: none;
   }
 }
