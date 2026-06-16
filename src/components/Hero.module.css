@@ -1,0 +1,176 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 0 4rem;
+}
+
+.glow {
+  position: absolute;
+  top: 10%;
+  right: -10%;
+  width: 55%;
+  height: 60%;
+  background: radial-gradient(ellipse at center, var(--gold-dim) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  max-width: 640px;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: var(--ink-raised);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--gold);
+  margin-bottom: 2rem;
+  animation: fadeUp 0.8s ease both;
+}
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: 1rem;
+  animation: fadeUp 0.8s ease 0.1s both;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.nameWord {
+  display: inline-block;
+  margin-right: 0.2em;
+  animation: fadeUp 0.8s ease both;
+}
+
+.title {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  color: var(--cream-muted);
+  margin-bottom: 2rem;
+  animation: fadeUp 0.8s ease 0.25s both;
+}
+
+.bio {
+  font-size: 1.1rem;
+  color: var(--cream-muted);
+  max-width: 52ch;
+  margin-bottom: 2.5rem;
+  animation: fadeUp 0.8s ease 0.35s both;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  animation: fadeUp 0.8s ease 0.45s both;
+}
+
+.primaryBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.75rem;
+  background: var(--gold);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.primaryBtn:hover {
+  background: var(--cream);
+  color: var(--ink);
+  transform: translateY(-2px);
+}
+
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.75rem;
+  border: 1px solid var(--border-strong);
+  color: var(--cream-muted);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.secondaryBtn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.decor {
+  position: absolute;
+  right: 0;
+  bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  opacity: 0.4;
+}
+
+.decorLine {
+  width: 1px;
+  height: 120px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+}
+
+.decorYear {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  writing-mode: vertical-rl;
+  color: var(--copper);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: auto;
+    padding: 3rem 0 2rem;
+  }
+
+  .decor {
+    display: none;
+  }
+}

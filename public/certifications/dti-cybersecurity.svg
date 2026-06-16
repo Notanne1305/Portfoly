@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <rect width="400" height="280" fill="#161412"/>
+  <rect x="16" y="16" width="368" height="248" rx="4" stroke="#c17f3a" stroke-width="1.5" fill="#1e1b18"/>
+  <rect x="32" y="32" width="80" height="80" rx="6" fill="#232018"/>
+  <text x="72" y="78" text-anchor="middle" fill="#e8a54b" font-family="system-ui,sans-serif" font-size="10" font-weight="700">DTI</text>
+  <text x="130" y="52" fill="#f0ebe3" font-family="system-ui,sans-serif" font-size="13" font-weight="700">Intro to Cybersecurity</text>
+  <text x="130" y="76" fill="#a89f94" font-family="system-ui,sans-serif" font-size="11">DTI / Cisco</text>
+  <line x1="32" y1="130" x2="368" y2="130" stroke="#c17f3a" stroke-opacity="0.3"/>
+  <text x="200" y="175" text-anchor="middle" fill="#a89f94" font-family="system-ui,sans-serif" font-size="12">Replace with your certificate image</text>
+  <text x="200" y="200" text-anchor="middle" fill="#c17f3a" font-family="system-ui,sans-serif" font-size="10">public/certifications/dti-cybersecurity.png</text>
+</svg>
