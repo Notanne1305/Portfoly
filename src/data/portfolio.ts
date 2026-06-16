@@ -63,7 +63,6 @@ export const portfolio: PortfolioData = {
     location: 'Davao City, Philippines',
     email: 'jonathan.g.sindo@gmail.com',
     bio: 'I build thoughtful digital experiences at the intersection of code and craft. From full-stack applications to visual art, I care about work that feels intentional — technically sound, visually considered, and built to last.',
-    avatarInitials: 'JS',
   },
   skills: [
     {

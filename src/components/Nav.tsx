@@ -13,8 +13,7 @@ export function Nav() {
   return (
     <nav className={styles.nav} aria-label="Main navigation">
       <a href="#" className={styles.logo} aria-label="Home">
-        <span className={styles.logoMark} />
-        <span className={styles.logoText}>folio</span>
+        <img src="/logo.png" alt="Logo" className={styles.logoImage} />
       </a>
 
       <ul className={styles.links}>

@@ -18,24 +18,7 @@
 
 .content {
   position: relative;
-  max-width: 640px;
-}
-
-.avatar {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  border: 1px solid var(--border-strong);
-  background: var(--ink-raised);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 1.25rem;
-  color: var(--gold);
-  margin-bottom: 2rem;
-  animation: fadeUp 0.8s ease both;
+  max-width: 840px;
 }
 
 .eyebrow {
@@ -76,7 +59,7 @@
 .bio {
   font-size: 1.1rem;
   color: var(--cream-muted);
-  max-width: 52ch;
+  max-width: 66ch;
   margin-bottom: 2.5rem;
   animation: fadeUp 0.8s ease 0.35s both;
 }

@@ -11,10 +11,6 @@ export function Hero({ personal }: HeroProps) {
       <div className={styles.glow} aria-hidden="true" />
 
       <div className={styles.content}>
-        <div className={styles.avatar} aria-hidden="true">
-          {personal.avatarInitials}
-        </div>
-
         <p className={styles.eyebrow}>{personal.location}</p>
 
         <h1 className={styles.name}>

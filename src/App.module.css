@@ -1,12 +1,10 @@
 .main {
-  margin-left: var(--nav-width);
-  padding: 0 clamp(1.5rem, 5vw, 4rem);
-  max-width: calc(var(--content-max) + var(--nav-width));
+  width: 100%;
+  padding: calc(5rem + 1rem) clamp(1.5rem, 5vw, 4rem) 0;
 }
 
 @media (max-width: 900px) {
   .main {
-    margin-left: 0;
-    padding-bottom: 5rem;
+    padding: calc(5rem + 0.75rem) clamp(1rem, 5vw, 2rem) 0;
   }
 }
