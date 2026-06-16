@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useState } from 'react'
 import type { ArtGroup } from '../data/portfolio'
 import { MediaLightbox } from './MediaLightbox'
 import styles from './Arts.module.css'
