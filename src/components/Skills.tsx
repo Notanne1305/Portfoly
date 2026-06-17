@@ -161,7 +161,7 @@ export function Skills({ skills, certifications }: SkillsProps) {
               title={credentialTitle(certifications[activeCertIndex] ?? certifications[0])}
               subtitle={certifications[activeCertIndex]?.issuer}
               src={certifications[activeCertIndex]?.imageUrl ?? ''}
-              credentialUrl={certifications[activeCertIndex]?.credentialUrl ?? ''}
+                credentialUrl={certifications[activeCertIndex]?.credentialUrl}
             />
           </div>
 
