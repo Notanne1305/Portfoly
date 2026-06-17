@@ -13,9 +13,10 @@ const palette = [
 interface ArtCategoryStackProps {
   group: ArtGroup
   colorOffset: number
+  delay?: string
 }
 
-export function ArtCategoryStack({ group, colorOffset }: ArtCategoryStackProps) {
+export function ArtCategoryStack({ group, colorOffset, delay }: ArtCategoryStackProps) {
   const [activeIndex, setActiveIndex] = useState(0)
   const [exiting, setExiting] = useState(false)
   const [lightboxOpen, setLightboxOpen] = useState(false)
@@ -39,7 +40,7 @@ export function ArtCategoryStack({ group, colorOffset }: ArtCategoryStackProps) 
   }
 
   return (
-    <div className={styles.column}>
+    <div className={styles.column} style={delay ? { transitionDelay: delay } : undefined}>
       <h3 className={styles.category}>{group.category}</h3>
 
       <button

@@ -12,6 +12,7 @@ export interface Project {
   url?: string
   repo?: string
   year: string
+  imageUrl?: string // <-- ADDED THIS FIELD TO ALLOW IMAGES IN PROJECTS
 }
 
 export interface Certification {
@@ -20,6 +21,8 @@ export interface Certification {
   date: string
   /** Image (.jpg, .png, .webp, .svg) or PDF (.pdf) in public/ */
   imageUrl: string
+  /** Optional small badge image (png/svg) for inline display */
+  badgeImageUrl?: string
   credentialUrl?: string
 }
 
@@ -68,7 +71,7 @@ export const portfolio: PortfolioData = {
   skills: [
     {
       category: 'Languages',
-      items: ['Java', 'Python', 'JavaScript','TypeScript', 'SQL'],
+      items: ['Java', 'Python', 'JavaScript','TypeScript'],
     },
     {
       category: 'Frontend',
@@ -86,12 +89,23 @@ export const portfolio: PortfolioData = {
 
   projects: [
     {
+      title: 'Love & Styles Rental System',
+      role: 'Designer, Frontend Developer',
+      description:
+        'A web development project intended to give a selling platform for second-hand vehicles.',
+      tags: ['Laravel', 'Tailwind', 'MySQL'],
+      repo: 'https://github.com/loftyyyy/SecondGear',
+      imageUrl: '/logo.png',
+      year: '2025',
+    },
+    {
       title: 'Caesar Cipher Encypt-Decrypt Activity',
       role: 'Author',
       description:
         'A programming project focused on Caesar encryption and decryption concepts.',
       tags: ['Python'],
       repo: 'https://github.com/Notanne1305/Caesar_Cipher',
+      imageUrl: '/logo.png',
       year: '2026',
     },
     {
@@ -101,6 +115,7 @@ export const portfolio: PortfolioData = {
       'A machine learning project for malware detection on Android devices.',
       tags: ['Python', 'Jupyter Notebook'],
       repo: 'https://github.com/loftyyyy/MalwareDetectionML',
+      imageUrl: '/logo.png',
       year: '2026',
     },
     {
@@ -110,6 +125,7 @@ export const portfolio: PortfolioData = {
         'A web development project intended to give a selling platform for second-hand vehicles.',
       tags: ['Laravel', 'Tailwind', 'MySQL'],
       repo: 'https://github.com/loftyyyy/SecondGear',
+      imageUrl: '/logo.png',
       year: '2025',
     },
   ],
@@ -119,21 +135,18 @@ export const portfolio: PortfolioData = {
       name: 'DTI Introduction to Cybersecurity Program',
       issuer: 'DTI / Cisco',
       date: '2026',
-      imageUrl: '/certifications/Introduction_to_Cybersecurity_certificate_j-sindo-545117-umindanao-edu-ph_ce72dc17-c847-4e82-9bbc-e2015a32f91a.pdf',
-      
+      imageUrl: 'public/certifications/Introduction_to_Cybersecurity_certificate_j-sindo-545117-umindanao-edu-ph_ce72dc17-c847-4e82-9bbc-e2015a32f91a.pdf',
+      badgeImageUrl: '/public/introduction-to-cybersecurity.png',
+      credentialUrl: 'https://www.credly.com/badges/df3f8773-f1de-4f16-87fa-6b4e79069e6a/public_url',
     },
     {
       name: 'Databases Certification',
       issuer: 'Certiport / Pearson',
       date: '2025',
-      imageUrl: '/certifications/Databases Certificate.pdf',
+      imageUrl: 'public/certifications/Databases Certificate.pdf',
+      badgeImageUrl: '/public/it-specialist-databases.png',
+      credentialUrl: 'https://www.credly.com/badges/15890ef8-3080-4198-81a9-6dcbaffb01c9/public_url',
     },
-    // {
-    //   name: 'Network Security',
-    //   issuer: 'Certiport',
-    //   date: '2026',
-    //   imageUrl: '/certifications/google-ux.svg',
-    // },
   ],
 
   artGroups: [
@@ -233,6 +246,6 @@ export const portfolio: PortfolioData = {
     { platform: 'GitHub', url: 'https://github.com/Notanne1305', label: 'Notanne1305' },
     { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/jonathan-sindo-4a8805298/', label: 'Jonathan Sindo' },
     { platform: 'Instagram', url: 'https://www.instagram.com/nahtzzz/', label: '@nahtzzz' },
-    { platform: 'Behance', url: 'https://behance.net', label: 'Portfolio' },
+    { platform: 'Facebook', url: 'https://www.facebook.com/JonathanGonzalesSindo/', label: 'Jonathan Gonzales Sindo' },
   ],
 }

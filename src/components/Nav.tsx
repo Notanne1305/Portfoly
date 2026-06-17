@@ -1,10 +1,10 @@
 import styles from './Nav.module.css'
 
 const links = [
-  { href: '#about', label: 'About' },
-  { href: '#skills', label: 'Skills' },
+  { href: '#download-resume', label: 'Download Resume' },
+  { href: '#about', label: 'Home' },
+  { href: '#skills', label: 'About' },
   { href: '#projects', label: 'Projects' },
-  { href: '#certifications', label: 'Certs' },
   { href: '#arts', label: 'Art' },
   { href: '#contact', label: 'Contact' },
 ]
@@ -19,7 +19,10 @@ export function Nav() {
       <ul className={styles.links}>
         {links.map((link) => (
           <li key={link.href}>
-            <a href={link.href} className={styles.link}>
+            <a
+              href={link.href}
+              className={`${styles.link} ${link.href === '#download-resume' ? styles.resumeButton : ''}`}
+            >
               {link.label}
             </a>
           </li>

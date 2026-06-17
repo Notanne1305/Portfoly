@@ -1,5 +1,4 @@
 import { Arts } from './components/Arts'
-import { Certifications } from './components/Certifications'
 import { Contact } from './components/Contact'
 import { Hero } from './components/Hero'
 import { Nav } from './components/Nav'
@@ -14,9 +13,8 @@ function App() {
       <Nav />
       <main className={styles.main}>
         <Hero personal={portfolio.personal} />
-        <Skills skills={portfolio.skills} />
+        <Skills skills={portfolio.skills} certifications={portfolio.certifications} />
         <Projects projects={portfolio.projects} />
-        <Certifications certifications={portfolio.certifications} />
         <Arts artGroups={portfolio.artGroups} />
         <Contact personal={portfolio.personal} socials={portfolio.socials} />
       </main>

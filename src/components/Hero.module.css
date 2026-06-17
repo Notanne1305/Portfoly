@@ -1,9 +1,12 @@
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 5rem);
   display: flex;
-  align-items: center;
-  padding: 6rem 0 4rem;
+  align-items: flex-start;
+  padding: 1.75rem 0 3rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .glow {
@@ -83,6 +86,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 999px;
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
@@ -97,6 +101,7 @@
   align-items: center;
   padding: 0.75rem 1.75rem;
   border: 1px solid var(--border-strong);
+  border-radius: 999px;
   color: var(--cream-muted);
   font-family: var(--font-display);
   font-size: 0.85rem;
@@ -170,7 +175,7 @@
 @media (max-width: 900px) {
   .hero {
     min-height: auto;
-    padding: 3rem 0 2rem;
+    padding: 1.25rem 0 2rem;
   }
 
   .decor {
