@@ -92,11 +92,21 @@ export const portfolio: PortfolioData = {
       title: 'Love & Styles Rental System',
       role: 'Designer, Frontend Developer',
       description:
-        'A web development project intended to give a selling platform for second-hand vehicles.',
+        'A Software Engineering project for attire rental business. Navigate by using email:admin@admin.com and pw:admin',
       tags: ['Laravel', 'Tailwind', 'MySQL'],
-      repo: 'https://github.com/loftyyyy/SecondGear',
-      imageUrl: '/logo.png',
-      year: '2025',
+      repo: 'https://lsrs-2a3261dcc58d.herokuapp.com/',
+      imageUrl: '/lsrs.png',
+      year: '2026',
+    },
+    {
+      title: 'Malvote - Malware Classification',
+      role: 'Collaborator',
+      description:
+      'A machine learning project for malware detection on devices.',
+      tags: ['Python', 'Jupyter Notebook'],
+      repo: 'https://malwareclassification-streamlit.onrender.com/',
+      imageUrl:'/malvote.png',
+      year: '2026',
     },
     {
       title: 'Caesar Cipher Encypt-Decrypt Activity',
@@ -105,29 +115,29 @@ export const portfolio: PortfolioData = {
         'A programming project focused on Caesar encryption and decryption concepts.',
       tags: ['Python'],
       repo: 'https://github.com/Notanne1305/Caesar_Cipher',
-      imageUrl: '/logo.png',
+      imageUrl: '/caesar.png',
       year: '2026',
     },
     {
-      title: 'Malware Detection ML',
-      role: 'Collaborator',
+      title: 'Integrated Store Management System',
+      role: 'Designer, Frontend Developer',
       description:
-      'A machine learning project for malware detection on Android devices.',
-      tags: ['Python', 'Jupyter Notebook'],
-      repo: 'https://github.com/loftyyyy/MalwareDetectionML',
-      imageUrl: '/logo.png',
-      year: '2026',
+        'A web development project for a store management system that integrates inventory, sales, and customer management features.',
+      tags: ['Laravel', 'Tailwind', 'MySQL'],
+      repo: 'https://github.com/loftyyyy/SecondGear',
+      imageUrl: '/store.png',
+      year: '2025',
     },
     {
       title: 'Second Gear',
-      role: 'Collaborator',
+      role: 'Designer, Frontend Developer',
       description:
         'A web development project intended to give a selling platform for second-hand vehicles.',
       tags: ['Laravel', 'Tailwind', 'MySQL'],
-      repo: 'https://github.com/loftyyyy/SecondGear',
-      imageUrl: '/logo.png',
+      repo: 'https://github.com/loftyyyy/',
+      imageUrl: '/secondgear.png',
       year: '2025',
-    },
+    }
   ],
 
   certifications: [

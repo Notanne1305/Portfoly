@@ -24,7 +24,7 @@ function credentialTitle(cert: Certification): string {
   const text = `${cert.name} ${cert.issuer}`.toLowerCase()
 
   if (text.includes('database')) return 'IT Specialist - Databases'
-  if (text.includes('cyber')) return 'IT Specialist - Cybersecurity'
+  if (text.includes('cyber')) return 'Introduction - Cybersecurity'
 
   return cert.name
 }
