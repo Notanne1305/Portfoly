@@ -136,7 +136,7 @@ export const portfolio: PortfolioData = {
       issuer: 'DTI / Cisco',
       date: '2026',
       imageUrl: 'public/certifications/Introduction_to_Cybersecurity_certificate_j-sindo-545117-umindanao-edu-ph_ce72dc17-c847-4e82-9bbc-e2015a32f91a.pdf',
-      badgeImageUrl: '/public/introduction-to-cybersecurity.svg',
+      badgeImageUrl: '/public/introduction-to-cybersecurity.png',
       credentialUrl: 'https://www.credly.com/badges/df3f8773-f1de-4f16-87fa-6b4e79069e6a/public_url',
     },
     {
@@ -144,7 +144,7 @@ export const portfolio: PortfolioData = {
       issuer: 'Certiport / Pearson',
       date: '2025',
       imageUrl: 'public/certifications/Databases Certificate.pdf',
-      badgeImageUrl: '/public/it-specialist-databases.svg',
+      badgeImageUrl: '/public/it-specialist-databases.png',
       credentialUrl: 'https://www.credly.com/badges/15890ef8-3080-4198-81a9-6dcbaffb01c9/public_url',
     },
   ],
