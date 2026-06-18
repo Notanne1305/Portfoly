@@ -1,7 +1,7 @@
 import styles from './Nav.module.css'
 
 const links = [
-  { href: '#download-resume', label: 'Download Resume' },
+  { href: '/resume/Resume.pdf', label: 'Download Resume', isResume: true },
   { href: '#about', label: 'Home' },
   { href: '#skills', label: 'About' },
   { href: '#projects', label: 'Projects' },
@@ -21,7 +21,9 @@ export function Nav() {
           <li key={link.href}>
             <a
               href={link.href}
-              className={`${styles.link} ${link.href === '#download-resume' ? styles.resumeButton : ''}`}
+              className={`${styles.link} ${link.isResume ? styles.resumeButton : ''}`}
+              target={link.isResume ? '_blank' : undefined}
+              rel={link.isResume ? 'noopener noreferrer' : undefined}
             >
               {link.label}
             </a>
