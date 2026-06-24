@@ -13,6 +13,7 @@ function credentialTitle(cert: Certification): string {
 
   if (text.includes('database')) return 'IT Specialist - Databases'
   if (text.includes('cyber')) return 'IT Specialist - Cybersecurity'
+  if (text.includes('github') || text.includes('javascript')) return 'Github and Javascript Workshop'
 
   return cert.name
 }

@@ -158,12 +158,13 @@ export const portfolio: PortfolioData = {
       credentialUrl: 'https://www.credly.com/badges/15890ef8-3080-4198-81a9-6dcbaffb01c9/public_url',
     },
     {
-      name: 'Github and Javascript Workshop',
-      issuer: 'Certiport / Pearson',
-      date: '2025',
-      imageUrl: '/CCE_Certificate_Jonathan_Sindo.pdf',
-      badgeImageUrl: '/cce skills.png',
-    },
+    name: 'Github and Javascript Workshop',
+    issuer: 'University of Mindanao',
+    date: '2025',
+    imageUrl: '/certifications/CCE-Certificate-Jonathan-Sindo.pdf',
+    badgeImageUrl: '/cce skills.png',
+    // credentialUrl removed — not hosted on Credly
+},
   ],
 
   artGroups: [
