@@ -134,7 +134,7 @@ export const portfolio: PortfolioData = {
       description:
         'A web development project intended to give a selling platform for second-hand vehicles.',
       tags: ['Laravel', 'Tailwind', 'MySQL'],
-      repo: 'https://github.com/loftyyyy/',
+      repo: 'https://github.com/loftyyyy/ChangChangIntegratedInventoryAndSalesSystem',
       imageUrl: '/secondgear.png',
       year: '2025',
     }
@@ -156,6 +156,13 @@ export const portfolio: PortfolioData = {
       imageUrl: '/certifications/Databases Certificate.pdf',
       badgeImageUrl: '/it-specialist-databases.png',
       credentialUrl: 'https://www.credly.com/badges/15890ef8-3080-4198-81a9-6dcbaffb01c9/public_url',
+    },
+    {
+      name: 'Github and Javascript Workshop',
+      issuer: 'Certiport / Pearson',
+      date: '2025',
+      imageUrl: '/CCE_Certificate_Jonathan_Sindo.pdf',
+      badgeImageUrl: '/cce skills.png',
     },
   ],
 
